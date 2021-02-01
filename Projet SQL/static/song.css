@@ -1,0 +1,103 @@
+.cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cover img{
+  width: 50%;
+  max-width: 450px;
+  border: black 3px solid;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+
+#songinfo a {
+  color: black;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgb(15, 15, 15);
+  font-weight: bold;
+}
+
+#songinfo a:hover {
+  border-bottom: 3px solid rgb(15, 15, 15);
+}
+
+.movie {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 40px;
+}
+
+.movie-content {
+  margin-left: 20px;
+}
+
+.movie img {
+  width: 200px;
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+
+}
+
+.duration{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+    
+}
+
+.durationbar{
+  width: 45%;
+  background-color: black;
+  border: black solid 2px;
+}
+
+.durationnumber{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+    
+}
+
+#songinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p{
+  padding: 1%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CinéAllo</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/song.css" />
+  <link rel="stylesheet" href="/static/header.css">
+</head>
+
+<body>
+  <nav>
+    <div class="Songify">
+      <img src="https://i.pinimg.com/736x/37/77/b9/3777b93defb9bcac89b78bfabacb730d.jpg" alt="">
+      <a href="/"><h1>Songify</h1></a>
+    </div>
+  <div class="Artistnav">
+    <a href="/artists/">Artiste</a>
+    <a href="/song/{{ range(1, 56) | random }}">Aléatoire</a>
+  </div>
+ </nav>
+ <div class="border">
+  <div class="cover">
+    {% if Song.cover%}
+    <img src=" {{ Song.cover }}" />
+    {% else %}
+    <img src="https://www.songmeaningsandfacts.com/wp-content/uploads/2020/10/E-GIRLS-ARE-RUINING-MY-LIFE-by-Corpse.jpg">
+    {% endif %}
+</div>
+<div id="songinfo">
+<h1>{{ Song.title }}</h1>
+<a href="/singer/{{ Song.Singers_id}}">{{ Song.name }}</a></div>
+
+  
+<div class="duration">
+  <div class="durationbar"></div>
+  <div class="durationnumber">
+    <p>
+      00:00
+    </p>
+    <p>
+    {{ Song.duration }}
+  </p>
+</div>
+  </div>
+</div>
+<footer>
+<p>Ce site est un projet étudiant. N'hésitez pas à consulter le Spotify de l'artiste!
+</p>
+<iframe src="https://open.spotify.com/embed/artist/{{ Song.spotify}}" width="800" height="75" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</footer>
+</body>
+
+</html>

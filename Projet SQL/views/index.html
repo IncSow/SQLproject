@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>CinéAllo</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/header.css">
+</head>
+
+<body>
+  <nav>
+    <div class="Songify">
+      <img src="https://i.pinimg.com/736x/37/77/b9/3777b93defb9bcac89b78bfabacb730d.jpg" alt="">
+      <a href="/"><h1>Songify</h1></a>
+    </div>
+  
+  <div class="Artistnav">
+    <a href="/artists/">Artiste</a>
+    <a href="/song/{{ range(1, 56) | random }}">Aléatoire</a>
+  </div>
+ </nav>
+ <div class="container">
+ <div class="titlescreen">
+ <h2>  Liste des titres  </h2></div>
+  <div class="grid">
+  {% for Songs in all_songs %}
+
+    
+  <div class="movie">
+    {% if Songs.cover%}
+    <a href="/song/{{ Songs.id }}"><img src=" {{ Songs.cover }}" /></a>
+    {% else %}
+    <a href="/song/{{ Songs.id }}"> <img src="https://www.songmeaningsandfacts.com/wp-content/uploads/2020/10/E-GIRLS-ARE-RUINING-MY-LIFE-by-Corpse.jpg"></a>
+    {% endif %}
+
+
+    <div class="movie-content">
+      <div class="songtitle"><a href="/song/{{ Songs.id }}">{{ Songs.title }} </a></div>
+      <div class="songtitle">
+        <p> {{ Songs.duration }}mins</p>
+      </div>
+        
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+<footer>
+  <p>Ce site est un projet étudiant, n'ayant aucune vocation commerciale. <br> Inspiré par Spotify.<p>
+</footer>
+</div>
+</body>
+
+</html>

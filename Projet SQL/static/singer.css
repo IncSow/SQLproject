@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+.albums{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+.album{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black 3px solid;
+    background-color: black;
+    color: white;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 3.5%;
+
+}
+
+
+h1{
+    text-align: center;
+}
+
+.album img{
+    width: 200px;
+}
+a {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  white-space: normal;
+  font-size: 1.5rem;
+}
+
+
+.singerinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    margin-top: -2%;
+}
+
+.singerpicture{
+    width: 450px;
+    height: 450px;
+    margin-top: 3.5%;
+}
+
+h1{
+    font-size: 1.75rem;
+}
+
+.page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+.albumlist{
+    margin-top: -2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+.separationbar{
+    width: 5px;
+    background-color: black;
+    height: 45vh;
+    padding-bottom: 5%;
+    margin-top: -2%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    padding: 1%;
+}
