@@ -22,7 +22,7 @@ nav div1{
 
 nav a{
   color: white;
-  font-size: 1rem;
+  font-size: 1.644398766700925vh;
   font-family: 'Varela Round', sans-serif;
   padding-right: 15%;
   padding-left: 15%;
@@ -35,7 +35,7 @@ nav a{
 }
 
 nav img{
-  width: 50px;
+  width: 5.138746145940391vh;
   padding-right: 5px;
   transform: rotate(180deg);
 }
@@ -65,6 +65,7 @@ footer p{
   color: white;
   text-align: center;
   margin: 0;
+  font-size: 1.644398766700925vh;
 }
 
 .container{
@@ -73,4 +74,8 @@ footer p{
 
 iframe{
   margin-bottom: 0.5%;
+}
+
+nav h1{
+  font-size:2.4665981500513876vh;
 }

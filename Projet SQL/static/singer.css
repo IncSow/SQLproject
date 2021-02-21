@@ -5,8 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 450px;
-    height: 450px;
+    margin-top: 5%;
 }
 .album{
     display:flex;
@@ -25,10 +24,11 @@
 
 h1{
     text-align: center;
+    font-size: 2.9vh;
 }
 
 .album img{
-    width: 200px;
+    width: 20.554984583761563vh;
 }
 a {
   color: rgb(15, 15, 15);
@@ -36,7 +36,9 @@ a {
   white-space: normal;
   font-size: 1.5rem;
 }
-
+h3{
+    font-size: 1.9239465570400822vh;
+}
 
 .singerinfo{
     display: flex;
@@ -48,14 +50,12 @@ a {
 }
 
 .singerpicture{
-    width: 450px;
-    height: 450px;
+    width: 46.248715313463514vh;
+    height: 46.248715313463514vh;
     margin-top: 3.5%;
 }
 
-h1{
-    font-size: 1.75rem;
-}
+
 
 .page{
     display: flex;
@@ -65,7 +65,6 @@ h1{
 }
 
 .albumlist{
-    margin-top: -2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +73,7 @@ h1{
 }
 
 h2{
-    font-size: 1.25rem;
+    font-size: 2vh;
 }
 
 .separationbar{
@@ -93,4 +92,10 @@ footer{
 
 footer p{
     padding: 1%;
+}
+
+.iframe{
+    width: 80vh;
+    height: 7.708vh;
+  
 }

@@ -22,19 +22,21 @@ a {
   color: rgb(15, 15, 15);
   text-decoration: none;
   white-space: normal;
+  font-size: 1.644398766700925vh;
 }
 
 .movie {
   display: flex;
   width: 20%;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
   opacity: 95%;
   transition: transform .2s;
 }
 
 
 .movie img {
-  width: 200px;
+  width: 20.554984583761563vh;
+  height: 20.554984583761563vh;
   border: black 3px solid;
   background-color: black;
 }
@@ -71,7 +73,7 @@ h2{
 .songtitle{
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 15,4vh;
   align-items: center;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
@@ -84,10 +86,14 @@ h2{
   justify-content: center;
   background-color: black;
   border: black 3px solid;
+  width: 16.032887975334017vh;
+  height: 20.554984583761563vh;
 }
 
 .movie:hover{
   transform: scale(1.1);
+  z-index: 250;
+  opacity: 	100%;
 }
 
 .movie a{

@@ -37,26 +37,26 @@
         {% for album in albums %}
         {% if album.cover%}
         <div class="album">
-        <h2>{{ album.album_name }}</h1>
-        <h3>Genre : {{ album.category_name }} </h3>
-        <img src="{{album.cover}}" alt="">
-        <h3>Durée : {{ album.duration }}mins</h3>
-        <h3>{{ album.nbrSong }} titres</h3>
+          <h2>{{ album.album_name }}</h1>
+          <h3>Genre : {{ album.category_name }} </h3>
+          <img src="{{album.cover}}" alt="">
+          <h3>Durée : {{ album.duration }}mins</h3>
+          <h3>{{ album.nbrSong }} titres</h3>
+        </div>
+        {% else %}
+        <h2>Cet artiste n'a pas sorti d'album, uniquement des singles!</h2>
+        {% endif %}
+        {% endfor %}
+      
+      
+      
       </div>
-      {% else %}
-      <h2>Cet artiste n'a pas sorti d'album, uniquement des singles!</h2>
-      {% endif %}
-      {% endfor %}
-      
-      
-      
-    </div>
     </div>
     </div>
     <footer>
   <p>Ce site est un projet étudiant. N'hésitez pas à consulter le Spotify de l'artiste!
   </p>
-  <iframe src="https://open.spotify.com/embed/artist/{{ singer.spotify}}" width="800" height="75" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <iframe class ="iframe" src="https://open.spotify.com/embed/artist/{{ singer.spotify}}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </footer></div>
 </body>
 
