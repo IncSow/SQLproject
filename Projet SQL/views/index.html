@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>CinéAllo</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,11 +28,12 @@
  <div class="container">
  <div class="titlescreen">
  <h2>  Liste des titres  </h2></div>
-  <div class="grid">
+ <div class="container">
+  <div class="row">
   {% for Songs in all_songs %}
 
     
-  <div class="movie">
+  <div class="movie col-3">
     {% if Songs.cover%}
     <a href="/song/{{ Songs.id }}"><img src=" {{ Songs.cover }}" /></a>
     {% else %}
@@ -50,6 +51,7 @@
   </div>
 
   {% endfor %}
+</div>
 </div>
 <footer>
   <p>Ce site est un projet étudiant, n'ayant aucune vocation commerciale. <br> Inspiré par Spotify.<p>
