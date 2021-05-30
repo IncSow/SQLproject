@@ -27,7 +27,6 @@ a {
 
 .movie {
   display: flex;
-  width: 20%;
   margin-bottom: 4vh;
   opacity: 95%;
   transition: transform .2s;
